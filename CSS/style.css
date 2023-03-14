@@ -1,57 +1,61 @@
-body,
-div,
-form,
-input {
-  padding: 0;
-  margin: 0;
-  outline: none;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
-  color: #666;
-  line-height: 22px;
+h1 {
+  font-size: 1.5rem;
 }
-select {
-  margin: 10px;
-  width: 5%;
+h2 {
+  font-size: 1rem;
+  margin-bottom: 0%;
 }
-textarea:hover {
-  outline: none;
-  border: 1px solid #095484;
-  background: #e6eef7;
-}
-header {
+
+.header {
+  background-color: black;
   text-align: center;
-  font-size: 30px;
-  margin: 20px;
+  color: #fff;
+  padding: 10px 0 10px 0;
+  font-size: 2rem;
 }
-label {
-  padding-bottom: 40px;
-  margin-left: 10px;
+.footer {
+  background-color: black;
+  text-align: center;
+  color: #fff;
 }
-form {
-  width: 150%;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 2px 5px #ccc;
-}
-#first,
-#last,
-#email,
-#notes,
-#color {
-  margin: 10px;
-  width: 10%;
-}
-#radio,
-#check,
-#submit {
+.values {
+  background-color: #e8eae6;
   padding: 10px;
-  margin-left: 20px;
 }
-button,
-input,
-text {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 500;
+.input {
+  display: block;
+}
+.fname {
+  background-color: #bdd2b6;
+  padding: 10px;
+}
+.lname {
+  background-color: #bdd2b6;
+  padding: 10px;
+  margin-top: 7px;
+}
+.email {
+  background-color: #bdd2b6;
+  padding: 10px;
+  margin-top: 7px;
+}
+.gender,
+.clr,
+.emp {
+  background-color: #bdd2b6;
+  padding: 10px;
+  margin-top: 7px;
+}
+.notes {
+  background-color: #bdd2b6;
+  padding: 10px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.john,
+.ema {
+  background-color: #bdd2b6;
+  /* padding: 5px; */
+  margin-top: 7px;
+  margin-bottom: 7px;
 }

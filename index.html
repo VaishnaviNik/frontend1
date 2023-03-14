@@ -4,44 +4,70 @@
     <title>Register</title>
   </head>
   <link href="./CSS/style.css" rel="stylesheet" />
-  <header>Register</header>
   <body>
+    <div class="header"><header>Assignment 1</header></div>
+    <h1>Register</h1>
     <form>
-      <label> First Name:</label><br /><input
-        type="text"
-        name="First"
-        id="first"
-        class="fn"
-      /><br />
-      <label> Last Name:</label><br /><input
-        type="text"
-        name="last"
-        id="last"
-      /><br />
-      <label>Email:</label><br /><input
-        type="email"
-        name="email"
-        id="email"
-      /><br />
-      <label>Gender:</label><br /><input type="radio" id="radio" />Male
-      <input type="radio" id="radio" /> Female
-      <input type="radio" id="radio" />Other<br />
-      <label>Favourite Color:</label><br /><select>
-        <option value="title" selected></option>
-        <option value="ms">Yellow</option>
-        <option value="miss">Red</option>
-        <option value="mrs">Green</option>
-        <option value="mr">Purple</option>
-      </select>
+      <div class="values">
+        <div class="fname">
+          <label for="first"> First Name:</label>
+          <input type="text" name="first" id="first" class="input" />
+        </div>
+       <div class="lname">
+         <label for="last"> Last Name:</label
+         ><input type="text" name="last" id="last" class="input" />
+        </div>
+        
+        <div class="email"><label for="email">Email:</label>
+          <input type="email" name="email" id="email" class="input" />
+        </div>
+        <div class="gender"><label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" valu="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" valu="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" valu="other" /><label
+            for="other">Other</label>
+        </div>
+        <div class="clr"> <label for="favourite" class="input">Favourite Color:</label
+        ><select>
+          <option value="" selected></option>
+          <option value="yellow">Yellow</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+        </select></div>
 
-      <br />
-      <label>Employeed</label><br /><input type="checkbox" id="check" /><br />
-      <label>Notes:</label><br /><input
-        type="text"
-        name="notes"
-        id="notes"
-      /><br />
+        <div class="emp">
+          <label>Employeed</label>
+          <input type="checkbox" id="check" class="input" />
+        </div>
+        <div class="notes">
+          <label for="notes">Notes:</label>
+          <input type="text" name="notes" id="notes" class="input" />
+        </div>
+      
       <input type="submit" id="submit" />
+      <input type="reset" />
+    </div>
+      <h1>List</h1>
+    <div class="values">
+      <div class="john">
+        <p><h2>1.John doe</h2> <a href="mailto:john@email.com">john@email.com</a><br />
+          Male<br />
+          Employed<br />
+          An apple a day keeps doctor away.
+        </p>
+      </div>
+      <div class="ema">
+        <p><h2>2.Ema Watson</h2> <a href="mailto:ema@email.com">ema@email.com</a><br />
+          Female<br />
+          Unemployed<br />
+          All that glitters is not gold.
+        </p>
+      </div>
+    </div>
     </form>
+    <div class="footer"><footer>Developed by Vaishnavi</footer></div>
   </body>
 </html>
