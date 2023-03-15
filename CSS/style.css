@@ -17,45 +17,56 @@ h2 {
   background-color: black;
   text-align: center;
   color: #fff;
+  margin: 20px 0 20px 0;
 }
 .values {
-  background-color: #e8eae6;
+  background-color: #fffbeb;
   padding: 10px;
 }
 .input {
   display: block;
 }
 .fname {
-  background-color: #bdd2b6;
+  background-color: #e8eae6;
   padding: 10px;
 }
-.lname {
-  background-color: #bdd2b6;
-  padding: 10px;
-  margin-top: 7px;
-}
+.lname,
 .email {
-  background-color: #bdd2b6;
+  background-color: #e8eae6;
   padding: 10px;
   margin-top: 7px;
 }
+
 .gender,
 .clr,
 .emp {
-  background-color: #bdd2b6;
+  background-color: #e8eae6;
   padding: 10px;
   margin-top: 7px;
 }
 .notes {
-  background-color: #bdd2b6;
+  background-color: #e8eae6;
   padding: 10px;
   margin-top: 7px;
   margin-bottom: 5px;
+  display: block;
 }
 .john,
 .ema {
-  background-color: #bdd2b6;
+  background-color: #e8eae6;
   /* padding: 5px; */
   margin-top: 7px;
   margin-bottom: 7px;
+}
+.male1 {
+  color: green;
+  font-size: medium;
+}
+h3 {
+  color: red;
+  margin: 0;
+}
+h4 {
+  background-color: yellow;
+  display: inline;
 }
