@@ -5,8 +5,12 @@ h2 {
   font-size: 1rem;
   margin-bottom: 0%;
 }
+form {
+  background-color: #fffbeb;
+  padding: 10px;
+}
 
-.header {
+header {
   background-color: black;
   text-align: center;
   color: #fff;
@@ -19,54 +23,20 @@ h2 {
   color: #fff;
   margin: 20px 0 20px 0;
 }
-.values {
-  background-color: #fffbeb;
-  padding: 10px;
-}
+
 .input {
   display: block;
 }
-.fname {
+.formfield {
   background-color: #e8eae6;
-  padding: 10px;
-}
-.lname,
-.email {
-  background-color: #e8eae6;
-  padding: 10px;
-  margin-top: 7px;
+  margin: 10px;
+  padding: 10px 0 10px 0;
 }
 
-.gender,
-.clr,
-.emp {
-  background-color: #e8eae6;
-  padding: 10px;
-  margin-top: 7px;
-}
-.notes {
-  background-color: #e8eae6;
-  padding: 10px;
-  margin-top: 7px;
-  margin-bottom: 5px;
-  display: block;
-}
 .john,
 .ema {
   background-color: #e8eae6;
-  /* padding: 5px; */
+  padding: 10px;
   margin-top: 7px;
   margin-bottom: 7px;
 }
-/* .male1 {
-  color: green;
-  font-size: medium;
-}
-h3 {
-  color: red;
-  margin: 0;
-} */
-/* span {
-  background-color: yellow;
-  display: inline;
-} */

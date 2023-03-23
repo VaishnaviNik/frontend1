@@ -3,74 +3,91 @@
   <head>
     <title>Register</title>
   </head>
-  <link href="./CSS/style.css" rel="stylesheet" />
-  <script>
+  
 
-  </script>
   <body>
-    <div class="header"><header>Assignment 1</header></div>
+    <header>Assignment 1</header>
+    <link href="./CSS/style.css" rel="stylesheet" />
     <h1>Register</h1>
-    <form>
-      <div class="values">
-        <div class="fname">
+    <form id="form">
+     
+        <div class="formfield">
           <label for="first"> First Name:</label>
-          <input type="text" name="first" id="first" class="input" />
+          <input type="text" name="firstName" id="firstname" class="input" required/>
         </div>
-       <div class="lname">
-         <label for="last"> Last Name:</label
-         ><input type="text" name="last" id="last" class="input" />
-         </div>
+        <div class="formfield">
+          <label for="last"> Last Name:</label
+          ><input type="text" name="lastname" id="lastname" class="input" />
+        </div>
         
-        <div class="email"><label for="email">Email:</label>
+        <div class="formfield"><label for="email">Email:</label>
           <input type="email" name="email" id="email" class="input" />
         </div>
-        <div class="gender"><label for="gender">Gender:</label>
-          <input type="radio" id="male" name="gender" valu="male" />
+        <div class="formfield"><label for="gender">Gender:</label>
+          <input type="radio" id="male" name="Gender" value="male" />
           <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" valu="female" />
+          <input type="radio" id="female" name="Gender" value="female" />
           <label for="female">Female</label>
-          <input type="radio" id="other" name="gender" valu="other" /><label
+          <input type="radio" id="other" name="Gender" value="other" /><label
             for="other">Other</label>
         </div>
-        <div class="clr"> <label for="favourite" class="input">Favourite Color:</label
-        ><select id="favclr">
+        <div class="formfield"> <label for="favourite" class="input">Favourite Color:</label
+          ><select id="favclr" name="favclr">
           <option value="" selected></option>
           <option value="yellow">Yellow</option>
           <option value="red">Red</option>
           <option value="green">Green</option>
           <option value="purple">Purple</option>
-        </select></div>
-
-        <div class="emp">
-          <label>Employeed</label>
-          <input type="checkbox" id="check" class="input" />
+          </select>
         </div>
-        <div class="notes">
+
+        <div class="formfield">
+          <label>Employed</label>
+          <input type="checkbox" id="check" class="input" value="check" name="employed"/>
+        </div>
+        <div class="formfield">
           <label for="notes">Notes:</label>
           <textarea id="notes" name="notes" rows="2" cols="8" class="input"></textarea>
         </div>
-      
-      <input type="submit" id="submit" />
-      <input type="reset" />
+        <button type="submit" value="save" >Save</button>
+        <button>Clear</button>
+    </form>
+    <div id="formData">
+
     </div>
-      <h1>List</h1>
-    <div class="values">
+    
+  <div>
+    <h1>List</h1>
+    <div class="List">
       <div class="john">
         <p><h2>1.John doe</h2> <a href="mailto:john@email.com">john@email.com</a><br>
-          <span style="color: green;">Male</span><br>
-          <span style="background-color:yellow;">Employed</span><br>
-          An apple a day keeps doctor away.
+        <span style="color: green;">Male</span><br>
+        <span style="background-color:yellow;">Employed</span><br>
+        An apple a day keeps doctor away.
         </p>
       </div>
       <div class="ema">
         <p><h2>2.Ema Watson</h2> <a href="mailto:ema@email.com">ema@email.com</a><br>
-         <span style="color: red;">Female</span> <br>
-          <span style="background-color: yellow;">Unemployed</span><br>
-          All that glitters is not gold.
+        <span style="color: red;">Female</span> <br>
+        <span style="background-color: yellow;">Unemployed</span><br>
+        All that glitters is not gold.
         </p>
-      </div>
     </div>
-    </form>
-    <div class="footer"><footer>Developed by Vaishnavi</footer></div>
+  </div>
+      <div class="footer"><footer>Developed by Vaishnavi</footer></div>
   </body>
+  <script>
+    const formDataDisplay = document.querySelector('#formData')
+    const form = document.querySelector('#form');
+    form.addEventListener('submit',(event)=> {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+      
+      formData.forEach((value, key) => {
+    formDataDisplay.innerHTML += `<p>${key}: ${value}</p>`;
+    });
+    })
+   
+  </script>
 </html>
