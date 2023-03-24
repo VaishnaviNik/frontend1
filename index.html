@@ -2,28 +2,30 @@
 <html lang="en">
   <head>
     <title>Register</title>
+    <link href="./CSS/style.css" rel="stylesheet" />
   </head>
   
 
   <body>
     <header>Assignment 1</header>
-    <link href="./CSS/style.css" rel="stylesheet" />
+    
     <h1>Register</h1>
     <form id="form">
      
         <div class="formfield">
           <label for="first"> First Name:</label>
-          <input type="text" name="firstName" id="firstname" class="input" required/>
+          <input type="text" name="firstName" id="firstname" class="input" placeholder="First Name"/>
         </div>
         <div class="formfield">
           <label for="last"> Last Name:</label
-          ><input type="text" name="lastname" id="lastname" class="input" />
+          ><input type="text" name="lastname" id="lastname" class="input" placeholder="Last Name"/>
         </div>
         
         <div class="formfield"><label for="email">Email:</label>
-          <input type="email" name="email" id="email" class="input" />
+          <input type="email" name="email" id="email" class="input"placeholder="Email" />
         </div>
-        <div class="formfield"><label for="gender">Gender:</label>
+        <div class="formfield">
+          <div class="input"><label for="gender">Gender:</label> </div>
           <input type="radio" id="male" name="Gender" value="male" />
           <label for="male">Male</label>
           <input type="radio" id="female" name="Gender" value="female" />
@@ -52,42 +54,26 @@
         <button type="submit" value="save" >Save</button>
         <button>Clear</button>
     </form>
-    <div id="formData">
-
-    </div>
     
-  <div>
+    
+  <div  class="list">
     <h1>List</h1>
-    <div class="List">
-      <div class="john">
+      <div class=listItems>
         <p><h2>1.John doe</h2> <a href="mailto:john@email.com">john@email.com</a><br>
         <span style="color: green;">Male</span><br>
         <span style="background-color:yellow;">Employed</span><br>
         An apple a day keeps doctor away.
         </p>
       </div>
-      <div class="ema">
+      <div class="listItems">
         <p><h2>2.Ema Watson</h2> <a href="mailto:ema@email.com">ema@email.com</a><br>
         <span style="color: red;">Female</span> <br>
         <span style="background-color: yellow;">Unemployed</span><br>
         All that glitters is not gold.
         </p>
-    </div>
+      </div>
   </div>
       <div class="footer"><footer>Developed by Vaishnavi</footer></div>
   </body>
-  <script>
-    const formDataDisplay = document.querySelector('#formData')
-    const form = document.querySelector('#form');
-    form.addEventListener('submit',(event)=> {
-      event.preventDefault();
-
-      const formData = new FormData(form);
-      
-      formData.forEach((value, key) => {
-    formDataDisplay.innerHTML += `<p>${key}: ${value}</p>`;
-    });
-    })
-   
-  </script>
+  
 </html>

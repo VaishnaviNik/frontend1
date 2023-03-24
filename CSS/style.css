@@ -1,3 +1,6 @@
+body {
+  font-family: sans-serif;
+}
 h1 {
   font-size: 1.5rem;
 }
@@ -11,14 +14,14 @@ form {
 }
 
 header {
-  background-color: black;
+  background-color: #2b2b2b;
   text-align: center;
   color: #fff;
   padding: 10px 0 10px 0;
   font-size: 2rem;
 }
 .footer {
-  background-color: black;
+  background-color: #2b2b2b;
   text-align: center;
   color: #fff;
   margin: 20px 0 20px 0;
@@ -32,9 +35,11 @@ header {
   margin: 10px;
   padding: 10px 0 10px 0;
 }
-
-.john,
-.ema {
+.list {
+  background-color: #fffbeb;
+  padding: 10px;
+}
+.listItems {
   background-color: #e8eae6;
   padding: 10px;
   margin-top: 7px;
