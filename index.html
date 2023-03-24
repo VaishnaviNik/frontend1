@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <link href="./CSS/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>Assignment 1</header>
+
+    <h1>Register</h1>
+    <form id="form">
+      <div class="formfield">
+        <label for="first"> First Name:</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstname"
+          class="input"
+          placeholder="First Name"
+        />
+      </div>
+      <div class="formfield">
+        <label for="last"> Last Name:</label
+        ><input
+          type="text"
+          name="lastname"
+          id="lastname"
+          class="input"
+          placeholder="Last Name"
+        />
+      </div>
+
+      <div class="formfield">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input"
+          placeholder="Email"
+        />
+      </div>
+      <div class="formfield">
+        <div class="input"><label for="gender">Gender:</label></div>
+        <input type="radio" id="male" name="Gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="Gender" value="other" /><label
+          for="other"
+          >Other</label
+        >
+      </div>
+      <div class="formfield">
+        <label for="favourite" class="input">Favourite Color:</label
+        ><select id="favclr" name="favclr">
+          <option value="" selected></option>
+          <option value="yellow">Yellow</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+        </select>
+      </div>
+
+      <div class="formfield">
+        <label>Employed</label>
+        <input
+          type="checkbox"
+          id="check"
+          class="input"
+          value="check"
+          name="employed"
+        />
+      </div>
+      <div class="formfield">
+        <label for="notes">Notes:</label>
+        <textarea
+          id="notes"
+          name="notes"
+          rows="2"
+          cols="8"
+          class="input"
+        ></textarea>
+      </div>
+      <button type="submit" value="save">Save</button>
+      <button>Clear</button>
+    </form>
+
+    <div class="list">
+      <h1>List</h1>
+      <div class="listItem">
+        <h2>1.John doe</h2>
+        <a href="mailto:john@email.com">john@email.com</a>
+        <div class="male">Male</div>
+        <mark>Employed</mark>
+        <p>An apple a day keeps doctor away.</p>
+      </div>
+      <div class="listItem">
+        <h2>2.Ema Watson</h2>
+        <a href="mailto:ema@email.com">ema@email.com</a>
+        <div class="female">Female</div>
+        <mark>Unemployed</mark>
+        <p>All that glitters is not gold.</p>
+      </div>
+    </div>
+    <footer>Developed by Vaishnavi</footer>
+  </body>
+</html>
