@@ -6,7 +6,7 @@ h1 {
 }
 h2 {
   font-size: 1rem;
-  margin-bottom: 0%;
+  margin: 0px;
 }
 form {
   background-color: #fffbeb;
@@ -17,14 +17,14 @@ header {
   background-color: #2b2b2b;
   text-align: center;
   color: #fff;
-  padding: 10px 0 10px 0;
+  padding: 10px;
   font-size: 2rem;
 }
-.footer {
+footer {
   background-color: #2b2b2b;
   text-align: center;
   color: #fff;
-  margin: 20px 0 20px 0;
+  margin: 10px;
 }
 
 .input {
@@ -33,15 +33,20 @@ header {
 .formfield {
   background-color: #e8eae6;
   margin: 10px;
-  padding: 10px 0 10px 0;
+  padding: 10px;
 }
 .list {
   background-color: #fffbeb;
   padding: 10px;
 }
-.listItems {
+.listItem {
   background-color: #e8eae6;
   padding: 10px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin: 10px;
+}
+.male {
+  color: green;
+}
+.female {
+  color: red;
 }
