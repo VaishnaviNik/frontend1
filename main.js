@@ -15,11 +15,11 @@ function createListItem() {
   const list = document.getElementById("list");
 
   const listItem = document.createElement("div");
-  listItem.id = "listItem";
+  listItem.className = "listItem";
   //h2 or Name
   const h2 = document.createElement("h2");
-  const textNode = document.createTextNode("3.Vaishnavi Nikam");
-  h2.appendChild(textNode);
+  const nameTextNode = document.createTextNode("3.Vaishnavi Nikam");
+  h2.appendChild(nameTextNode);
   listItem.appendChild(h2);
   // Email
   const a = document.createElement("a");
@@ -28,16 +28,16 @@ function createListItem() {
   a.appendChild(emailTextNode);
   listItem.appendChild(a);
   // Gender
-  const gender = document.createElement("div");
-  gender.classList.add("female");
+  const genderElement = document.createElement("div");
+  genderElement.classList.add("female");
   const genderTextNode = document.createTextNode("Female");
-  gender.appendChild(genderTextNode);
-  listItem.appendChild(gender);
+  genderElement.appendChild(genderTextNode);
+  listItem.appendChild(genderElement);
   //Employement
-  const mark = document.createElement("mark");
-  const markText = document.createTextNode("Unemployed");
-  mark.appendChild(markText);
-  listItem.appendChild(mark);
+  const employment = document.createElement("mark");
+  const employementText = document.createTextNode("Unemployed");
+  employment.appendChild(employementText);
+  listItem.appendChild(employment);
   //ParaText
   const para = document.createElement("p");
   const paraText = document.createTextNode("Health is wealth");
