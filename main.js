@@ -22,11 +22,11 @@ function createListItem() {
   h2.appendChild(nameTextNode);
   listItem.appendChild(h2);
   // Email
-  const a = document.createElement("a");
-  a.href = "mailto:vaishnavinikam36@gmail.com";
+  const emailElement = document.createElement("a");
+  emailElement.href = "mailto:vaishnavinikam36@gmail.com";
   const emailTextNode = document.createTextNode("vaishnavinikam36@gmail.com");
-  a.appendChild(emailTextNode);
-  listItem.appendChild(a);
+  emailElement.appendChild(emailTextNode);
+  listItem.appendChild(emailElement);
   // Gender
   const genderElement = document.createElement("div");
   genderElement.classList.add("female");
@@ -39,11 +39,12 @@ function createListItem() {
   employment.appendChild(employementText);
   listItem.appendChild(employment);
   //ParaText
-  const para = document.createElement("p");
-  const paraText = document.createTextNode("Health is wealth");
-  para.appendChild(paraText);
-  listItem.appendChild(para);
+  const notesElement = document.createElement("p");
+  const notesTextNode = document.createTextNode("Health is wealth");
+  notesElement.appendChild(notesTextNode);
+  listItem.appendChild(notesElement);
 
   list.appendChild(listItem);
 }
+
 createListItem();
